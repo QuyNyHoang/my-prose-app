@@ -1,44 +1,42 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+         http://maven.apache.org/maven-v4_0_0.xsd">
+
   <modelVersion>4.0.0</modelVersion>
+
   <groupId>com.quynyhoang</groupId>
   <artifactId>my-prose-app</artifactId>
-  <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
   <name>my-prose-app</name>
   <url>http://maven.apache.org</url>
-<repositories>
-  <repository>
-    <id>github</id>
-    <url>https://maven.pkg.github.com/bs-jokri/prosebuilder</url>
-    <snapshots>
-      <enabled>true</enabled>
-    </snapshots>
-  </repository>
-</repositories>
+
+  <repositories>
+    <repository>
+      <id>github</id>
+      <url>https://maven.pkg.github.com/bs-jokri/prose-builder</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+
   <dependencies>
+    <dependency>
+      <groupId>de.htw_berlin.fb4.ossd</groupId>
+      <artifactId>prose_builder</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-<dependency>
-  <groupId>com.example</groupId>
-  <artifactId>prose-builder</artifactId>
-  <version>1.0.0</version>
-</dependency>
   </dependencies>
 
-<distributionManagement>
-  <repository>
-    <id>github</id>
-    <name>GitHub Packages</name>
-<url>https://maven.pkg.github.com/QuyNyHoang/my-prose-app</url>
-  </repository>
-  <snapshotRepository>
-    <id>github</id>
-<url>https://maven.pkg.github.com/QuyNyHoang/my-prose-app</url>
-  </snapshotRepository>
-</distributionManagement>
 </project>
+
